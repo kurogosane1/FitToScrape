@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Mongo-Scrape News</title>
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Theme CSS -->
-    <link href="style.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Cormorant SC' rel='stylesheet' type='text'>
-    <link href='http://fonts.googleapis.com/css?family=Moul' rel='stylesheet' type='text'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<body background="./images/Scan2.jpeg">
+	<nav class="navbar">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="/">Mongo Scraper</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="location"><a class="navLink" href="/">Home</a></li>
+	      <li><a href="/saved">Saved Articles</a></li>
+	      <li><buton class="btn" id="scrapeBtn">Scrape New Articles!</button></li>
+	    </ul>
+	  </div>
+	</nav>
+	<!-- modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body modal-bodyMain">
+	        <p>Added <span id="number"></span> new articles</p>
+	      </div>
+				<button type="button" class="btn" data-dismiss="modal">Close</button>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- Title section for the page -->
+	<div class="container title">
+		<h1 class="mainTitle">
+			News Article
+		</h1>
+		
+	</div>
+	<!-- for each artical -->
+	<div class="container" id="subBod">
+	</div>
 
-<body>
-    <!-- Basic Bootstrap Navigation Bar -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Mongo News Scraper</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Saved articles</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="jumbotron">
-                    <h1>Mongo Scraper</h1>
-                    <p>El norte - news</p>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Scrape new articles</a></p>
-                </div>
-                <h2> Today's Articles</h2>
-                <div id="results"></div>
-            </div>
-        </div>
-    </div>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="app.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/app.js"></script>
 </body>
-
 </html>
