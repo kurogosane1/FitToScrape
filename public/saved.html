@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mongo-Scrape News</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Theme CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Cormorant SC' rel='stylesheet' type='text'>
+    <link href='http://fonts.googleapis.com/css?family=Moul' rel='stylesheet' type='text'>
+</head>
+<body>
+    <!-- Basic Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Mongo News Scraper</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Saved articles</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Notes for the article</h1>
+        <div id="userinput">
+            <p>Title</p>
+            <input type="text" id="title" />
+            <br>
+            <p>Note</p>
+            <textarea id="note"></textarea>
+            <div id="buttons">
+                <div id="actionbutton">
+                    <button id="makenew">Submit</button>
+                </div>
+                <button id="clearall">Delete All Notes</button>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
