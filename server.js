@@ -26,8 +26,8 @@ app.set("view engine", "handlebars");
 var mongoose = require("mongoose");
 mongoose.Promise = Promise;
 //***************depending if you are doing a local host or heroku this depends on the switch
-mongoose.connect("mongodb://localhost/mongoScrapeHW");
-// mongoose.connect("mongodb://heroku_27j86b0b:82fu6h1k65crrmu2070ouua0v4@ds129050.mlab.com:29050/heroku_27j86b0b");
+// mongoose.connect("mongodb://localhost/mongoScrapeHW");
+mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds129010.mlab.com:29010/heroku_rz33cvxh");
 //***************************************************************************************************
 var db = mongoose.connection;
 db.on("error", function(error) {

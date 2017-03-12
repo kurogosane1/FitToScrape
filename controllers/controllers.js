@@ -11,8 +11,8 @@ var url = "http://www.nytimes.com";
 //setting up mongojs
 var mongojs = require("mongojs");
 //***********************depending if you are doing a local host or heroku this depends on the switch
-var databaseUrl = "mongoScrapeHW";
-// const databaseUrl = "mongodb://heroku_27j86b0b:82fu6h1k65crrmu2070ouua0v4@ds129050.mlab.com:29050/heroku_27j86b0b";
+// var databaseUrl = "mongoScrapeHW";
+var databaseUrl = "mongodb://<dbuser>:<dbpassword>@ds129010.mlab.com:29010/heroku_rz33cvxh";
 //***************************************************************************************************
 var collections = ["saveArticles"];
 var db = mongojs(databaseUrl, collections);
